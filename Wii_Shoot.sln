@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Wii_Shoot", "Wii_Shoot.vcxproj", "{91FCB6BC-D63F-42DB-A461-CCB9BC9166E9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91FCB6BC-D63F-42DB-A461-CCB9BC9166E9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{91FCB6BC-D63F-42DB-A461-CCB9BC9166E9}.Debug|Win32.Build.0 = Debug|Win32
+		{91FCB6BC-D63F-42DB-A461-CCB9BC9166E9}.Release|Win32.ActiveCfg = Release|Win32
+		{91FCB6BC-D63F-42DB-A461-CCB9BC9166E9}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

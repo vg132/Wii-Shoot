@@ -1,0 +1,12 @@
+﻿Build started 2010-07-26 14:07:34.
+     1>Project "C:\Dropbox\Projects\Wii\Wii_Shoot\Wii_Shoot.vcxproj" on node 2 (build target(s)).
+     1>Build:
+         make
+         Main.cpp
+         linking ... Wii_Shoot.elf
+         output ... Wii_Shoot.dol
+     1>Done Building Project "C:\Dropbox\Projects\Wii\Wii_Shoot\Wii_Shoot.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.35

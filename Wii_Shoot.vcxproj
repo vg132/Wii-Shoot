@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Graphics\background.c" />
+    <ClCompile Include="Source\Graphics\BMfont5.c" />
+    <ClCompile Include="Source\Graphics\sight_p1.c" />
+    <ClCompile Include="Source\Graphics\sight_p2.c" />
+    <ClCompile Include="Source\Graphics\sight_p3.c" />
+    <ClCompile Include="Source\Graphics\sight_p4.c" />
+    <ClCompile Include="Source\Graphics\target.c" />
+    <ClCompile Include="Source\List.cpp" />
+    <ClCompile Include="Source\Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\Common.h" />
+    <ClInclude Include="source\graphics\background.h" />
+    <ClInclude Include="Source\Graphics\BMfont5.h" />
+    <ClInclude Include="Source\Graphics\sight_p1.h" />
+    <ClInclude Include="Source\Graphics\sight_p2.h" />
+    <ClInclude Include="Source\Graphics\sight_p3.h" />
+    <ClInclude Include="Source\Graphics\sight_p4.h" />
+    <ClInclude Include="source\graphics\target.h" />
+    <ClInclude Include="source\List.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{91FCB6BC-D63F-42DB-A461-CCB9BC9166E9}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeBuildCommandLine>make</NMakeBuildCommandLine>
+    <NMakeOutput>Wii_Shoot.dol</NMakeOutput>
+    <NMakeCleanCommandLine>clean</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>rebuild</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>PPC;WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>D:\Wii\DevkitPro\libogc\include;$(ProjectDir)Include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeBuildCommandLine>make</NMakeBuildCommandLine>
+    <NMakeOutput>Wii_Shoot.dol</NMakeOutput>
+    <NMakeCleanCommandLine>clean</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>rebuild</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>PPC;WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>D:\Wii\DevkitPro\libogc\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
